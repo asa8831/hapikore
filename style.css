@@ -1,0 +1,281 @@
+/* =========== */
+
+/* 共通設定 */
+
+/* =========== */
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  color: #545454;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+/* コンテンツ同士のマージン */
+.for__margin {
+  margin-top: 60px;
+}
+
+
+/* =========== */
+
+/* メニュー */
+
+/* =========== */
+
+.logo {
+  background: pink;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #fbfbfa;
+  line-height: 50px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.site__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.menu__nav {
+  color: #fbfbfa;
+  text-align: center;
+  display: block;
+  height: 50px;
+}
+
+.menu__outer__ul li {
+  float: left;
+  position: relative;
+  display: block;
+  margin: 0 0 0 1px;
+  padding: 5px;
+  width: 199px;
+  background: #555555;
+  border-bottom: 1px solid #fbfbfa;
+  /* スライダーよりドロップメニューを上に表示させるため */
+  z-index: 2;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  margin-left: -6px;
+  border-top: 1px solid #fff;
+}
+
+.menu li a {
+  display: block;
+}
+
+.menu li a:hover {
+  background: #c8c8c8;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+/* =========== */
+
+/* スライダー */
+
+/* =========== */
+
+.slider__wrap {
+  width: 1000px;
+  height: 400px;
+  overflow: hidden;
+  background: #cc4954;
+  z-index: 1;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__pic {
+  width: 1000px;
+  height: 400px;
+  float: left;
+  text-align: center;
+}
+
+.slider__pic__img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* =========== */
+
+/* 特集・おすすめ共通*/
+
+/* =========== */
+
+.middle__title {
+  border-bottom: 1px solid #1b1b1b;
+  width: 50%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.next__page__link {
+  border: 1px solid #1b1b1b;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* =========== */
+
+/* おすすめ*/
+
+/* =========== */
+
+.for__colum {
+  display: flex;
+}
+
+.for__3colum__img__wrap {
+  width: 300px;
+  margin: 20px;
+}
+
+.for__3colum__img {
+  width: 100%;
+  box-shadow: 1px 1px 5px #b8b8b8;
+  transition: all .8s;
+}
+
+.for__3colum__img:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 10px#c8c8c8;
+  transition: all .8s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* =========== */
+
+/* 特集 */
+
+/* =========== */
+
+.for__2colum__img__wrap {
+  width: 500px;
+  margin: 20px;
+}
+
+.for__2colum__img__wrap img {
+  width: 100%;
+}
+
+
+.small__title span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.for__2colum__img {
+  position: relative;
+  width: 100%;
+}
+
+.for__2colum__img__txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  transition: .5s;
+}
+
+.for__2colum__img__txt p {
+  font-size: 16px;
+  background: #fbfbfa;
+  margin-top: 130px;
+}
+
+.for__2colum__img__txt:hover {
+  opacity: 1;
+  transition: .5s;
+  cursor: pointer;
+
+}
+
+/* * =========== */
+
+/* 上に戻るボタン */
+
+/* =========== */
+
+.to__top {
+  position: relative;
+  background: #cc4954;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all .8s;
+}
+
+.to__top:hover {
+  transform: translateY(-5px);
+  transition: all .8s;
+}
+
+.to__top__arrow {
+  position: absolute;
+  /* 丸の中に四角をつくり、矢印のように見せる*/
+  width: 30px;
+  height: 30px;
+  border-top: solid 5px #fbfbfa;
+  border-right: solid 5px #fbfbfa;
+  /* 矢印を真ん中におろしてくる */
+  top: 35%;
+  left: 30%;
+  /* 回転させて矢印型にする */
+  transform: rotate(-45deg);
+}
+
+/* =========== */
+
+/* フッター */
+
+/* =========== */
+
+/* フッター最下層固定 */
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: #555555;
+  color: #fbfbfa;
+  text-align: center;
+  line-height: 90px
+}
