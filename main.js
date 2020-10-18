@@ -20,11 +20,9 @@ $(function () {
 
   // // 現在表示されているスライドの番号
   var currentPicNum = 1;
-  // ul稼働枠
   var $slider = $('.js-slider');
-  // liスライド枚数
   var sliderTotalPic = $('.js-slider-pic').length;
-  console.log(sliderTotalPic);
+  
   // li１枚１枚の横幅
   var slideWidth = $('.js-slider-pic').outerWidth();
   // 写真の横幅の合計＝トータルの枚数＊１枚の横幅 *2
@@ -32,12 +30,10 @@ $(function () {
   // スライドするときの速さ0.5秒
   var DURATION = 500;
   // スライドが切り替わるタイミング
-  var AUTO = 5000;
+  var AUTO = 10000;
 
 
-  // ul稼働枠、写真の横幅の合計のwidthをつける
   $slider.attr('style', 'width:' + sliderTotalLength + 'px');
-
 
   setInterval(function () {
 
@@ -58,7 +54,7 @@ $(function () {
       }, DURATION);
 
       currentPicNum++;
-      console.log(currentPicNum);
+      
     }
     
   }, AUTO);

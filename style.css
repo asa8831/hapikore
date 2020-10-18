@@ -240,15 +240,12 @@ body {
 
 .to__top__arrow {
   position: absolute;
-  /* 丸の中に四角をつくり、矢印のように見せる*/
   width: 30px;
   height: 30px;
   border-top: solid 5px #fbfbfa;
   border-right: solid 5px #fbfbfa;
-  /* 矢印を真ん中におろしてくる */
   top: 35%;
   left: 30%;
-  /* 回転させて矢印型にする */
   transform: rotate(-45deg);
 }
 
