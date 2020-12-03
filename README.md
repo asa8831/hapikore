@@ -8,4 +8,4 @@
 ゆったりとしたアニメーションと落ち着きのある色合いで、どの年代の方にも安心して利用してもらえるようなサイトを目指しました。
 
 # 開発環境
-macOS(Catallina)、html5、CSS3、jQuery(3.5.1)、Photoshop
+MacOS(Catallina)、HTML5、CSS3、jQuery(3.5.1)、Photoshop
